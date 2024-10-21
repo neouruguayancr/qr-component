@@ -13,6 +13,9 @@
 
 body {
   background-color: var(--background_color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #qr-container {
