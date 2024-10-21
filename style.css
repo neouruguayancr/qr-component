@@ -16,8 +16,9 @@ body {
 body {
   background-color: var(--background_color);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0;
 }
 
@@ -39,7 +40,8 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 7rem auto 2rem auto;
+  margin-top: 7rem;
+  margin-bottom: 2rem;
 }
 
 .qr-code-img {
@@ -70,12 +72,16 @@ p {
   margin-top: 10px;
 }
 
-/* 
+footer {
+  width: 100%;
+  text-align: center;
+  color: var(--Slate_500);
+  border-top: 1px solid #d6e2f0;
+  margin-top: -30px;
+  position: relative;
+}
 
-  Media Queries
-
-*/
-
+/* Media Queries */
 @media screen and (max-width: 480px) {
   #qr-container {
     width: 90%;
